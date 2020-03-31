@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html>
+<head>
+    <style>
+        .texts {
+            color: darkgreen;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        input {
+            background-color: #e7e7e7;
+            color: black;
+            padding: 10px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        img {
+            border-radius: 3px;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="text-center">
+        <h1>Welcome</h1>
+        <h3>Start Donating</h3>
+        <table style="width:100%">
+            <tr>
+                <td class="texts">Education</td>
+                <td class="texts">Medical</td>
+                <td class="texts">Foodbank</td>
+            </tr>
+            <tr>
+
+                <td><img src="~/images/Schools.jpg" /></td>
+                <td> <img src="~/images/Medical.jpg" /></td>
+                <td><img src="~/images/Food.jpg" /></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td class="texts">Cancer Patient</td>
+                <td class="texts">Animals</td>
+                <td class="texts">Memorial</td>
+            </tr>
+            <tr>
+                <td><img src="~/images/Cancer.jpg" /></td>
+                <td> <img src="~/images/Animals.jpg" /></td>
+                <td> <img src="~/images/Memorial.jpg" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Donate" onclick="@("window.location.href='"+Url.Action("Donation","Home")+"'");"></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+</body>
+</html>
+
+

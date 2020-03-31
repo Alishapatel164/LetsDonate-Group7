@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Group7_Week3.Models.Team>
+@{
+    ViewData["Title"] = "Team Member";
+}
+    <body style="background-color:#00FFFF;">
+        <h1>@ViewData["Title"]</h1>
+        <hr />
+        @foreach (var contact1 in Model)
+        {
+            <h3>Member Name:<font face="verdana" color="red"><u>@contact1.Name</u></font></h3>
+
+            <h4>Email address: <font face="verdana" color="green"><u>@contact1.Email</u></font></h4>
+
+            <h5>Contact Number:<u>@contact1.Contact</u></h5>
+            <h5>About me:@contact1.info</h5>
+
+        }
+    </body>

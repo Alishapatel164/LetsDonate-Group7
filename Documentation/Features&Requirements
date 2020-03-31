@@ -1,0 +1,22 @@
+Requirements:
+
+1. Registration: it is mandatory for each user to register themselves with their email address before they can use application.
+2. Login: user has to login the application in order to use features by verifying username and password.
+3. Logout: after logging our user will be redirected to the home page for further use.
+4.Donation payment page: every donation will processed through this page, any client that are willing to donate has to provide login information and will choose any of the payment option.
+5.Manage profile: any changes regarding personal information of user can be made and updated on through this page.
+6.Collaborated organisation: information of organisation that has collaborated to gather fund in various field can be found on this page, there are different sections i.e. medical, education, animals,
+memorial and non-profit.
+7.Contact us: information for reaching us by means of email address or contact number can be found on this page. Issues or bug that needs be reported or any suggestion to make application better can
+be sent through from this page.
+
+
+Features:
+1.Effortless payment gateway: it makes whole process of payment easy and fast, transaction details can also be accessed from email or history page.
+2.Near me: near me feature uses GPS to locate people who needs fund near you. It will automatically search for various people and divide them in category for better view.
+3.Follow us footer: different platforms like  facebook  and twitter where users can follow page to stay up to date with new content.
+4.Success  stories: stories of people who have successfully gathered funds and overcome their hurdle can be found on this page.it may inspire more people to donate to help people live a better life.
+5.Common Question: it is a page where anyone can find information regarding questions that  are asked frequently.
+6.How the fundhub works page: processes from beginning to end guiding users through whole process.
+7.Multi-lingual support: support for different languages, where user can select different languages from a drop down menu and whole page will be translated in that language.
+8.Secure and anonymous payment: every payment will be securely transferred and  option to transfer credit anonymously is also available.
