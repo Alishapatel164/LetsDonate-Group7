@@ -11,7 +11,7 @@ using Group7_Week3.Models;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace Group7_Week3.Controllers
 {
@@ -35,11 +35,13 @@ namespace Group7_Week3.Controllers
         {
             return View();
         }
+        [Authorize]
         [HttpGet]
         public IActionResult Donation()
         {
             return View();
         }
+        [Authorize]
         [HttpPost]
         public IActionResult Donation(Donation donate1)
         {
