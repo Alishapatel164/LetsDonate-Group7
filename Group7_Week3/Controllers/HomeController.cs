@@ -46,8 +46,10 @@ namespace Group7_Week3.Controllers
         public IActionResult Donation(Donation donate1)
         {
             ContactHandler handler = new ContactHandler(_configuration);
+            
             var newDonation1 = handler.AddDonations(donate1);
-            return View();
+            return View(donate1);
+            
         }
         public IActionResult Organization()
         {
