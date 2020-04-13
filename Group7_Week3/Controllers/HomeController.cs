@@ -47,13 +47,21 @@ namespace Group7_Week3.Controllers
         {
             ContactHandler handler = new ContactHandler(_configuration);
             var newDonation1 = handler.AddDonations(donate1);
-            return View();
+            return RedirectToAction("DonationListing");
         }
         public IActionResult Organization()
         {
             Donation db = new Donation();
             ViewBag.Organization = new SelectList(db.Organization, "Organization");
             return View();
+        }
+        public IActionResult DonationListing()
+        {
+            ContactHandler handler = new ContactHandler(_configuration);
+
+            var donate = handler.GetAllDonation();
+
+            return View(donate);
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

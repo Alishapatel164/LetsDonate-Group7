@@ -42,9 +42,19 @@ namespace DAL
                 return contacts;
             }
         }
+        public Donation[] GetAllDonationFromDatabase()
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.BlogConnectionStringValue(_configuration, ConnectionStringName)))
+            {
+
+                Donation[] donate = connection.Query<Donation>("Select * from Donate").ToArray();
+                return donate;
+            }
+
+        }
         public object AddDonationToDatabase(Donation newDonation)
         {
-            string queryString = "INSERT INTO Donate(Organization,Donar_name,Address,Contact_no,Email_id,Amount,Our_Org)Values('" + newDonation.Organization + "','" + newDonation.Name + "','" + newDonation.Address + "','" + newDonation.Contact_No + "','" + newDonation.Email + "','" + newDonation.Amount + "','" + newDonation.Our_Org + "');";
+            string queryString = "INSERT INTO Donate(Organization,Donar_name,Address,City,Contact_no,Email_id,Amount,Our_Org)Values('" + newDonation.Organization + "','" + newDonation.Donar_name + "','" + newDonation.Address + "','" + newDonation.City + "','" + newDonation.Contact_No + "','" + newDonation.Email_id + "','" + newDonation.Amount + "','" + newDonation.Our_Org + "');";
 
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.BlogConnectionStringValue(_configuration, ConnectionStringName)))
             {

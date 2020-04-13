@@ -34,6 +34,14 @@ namespace Library.BusinessLogic
 
             return contacts;
         }
+        public Donation[] GetAllDonation()
+        {
+            DataAccess db = new DataAccess(_configuration);
+
+            Donation[] donate = db.GetAllDonationFromDatabase();
+
+            return donate;
+        }
         public object AddDonations(Donation donations)
         {
             DataAccess db = new DataAccess(_configuration);
