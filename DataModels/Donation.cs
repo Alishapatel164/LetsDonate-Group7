@@ -12,5 +12,6 @@ namespace DataModels
         public string Contact_No { get; set; }
         public string Email { get; set; }
         public int Amount { get; set; }
+        public string Our_Org { get; set; }
     }
 }

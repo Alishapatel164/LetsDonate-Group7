@@ -44,7 +44,7 @@ namespace DAL
         }
         public object AddDonationToDatabase(Donation newDonation)
         {
-            string queryString = "INSERT INTO Donate(Organization,Donar_name,Address,Contact_no,Email_id,Amount)Values('" + newDonation.Organization + "','" + newDonation.Name + "','" + newDonation.Address + "','" + newDonation.Contact_No + "','" + newDonation.Email + "'," + newDonation.Amount + ");";
+            string queryString = "INSERT INTO Donate(Organization,Donar_name,Address,Contact_no,Email_id,Amount,Our_Org)Values('" + newDonation.Organization + "','" + newDonation.Name + "','" + newDonation.Address + "','" + newDonation.Contact_No + "','" + newDonation.Email + "','" + newDonation.Amount + "','" + newDonation.Our_Org + "');";
 
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.BlogConnectionStringValue(_configuration, ConnectionStringName)))
             {

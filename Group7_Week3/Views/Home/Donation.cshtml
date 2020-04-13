@@ -12,58 +12,64 @@
 
         @using (Html.BeginForm())
         {
-            <table width="20%">
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.Organization)
-                        @Html.DropDownList("Organization", new List<SelectListItem>
-                       {
-                        new SelectListItem { Text = "Education"},
-                        new SelectListItem { Text = "Animals"},
-                        new SelectListItem { Text = "Memorial"},
-                        new SelectListItem { Text = "FoodBank"},
-                        new SelectListItem { Text = "CancerPatient"},
-                        new SelectListItem { Text = "Medical"}
-                        }, "Select Organization")
-                        @*@Html.EditorFor(model => model.Organization)*@
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.Name)
-                        @Html.EditorFor(model => model.Name)
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.LabelFor(model => model.Email)
-                        @Html.EditorFor(model => model.Email)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.LabelFor(model => model.Address)
-                        @Html.EditorFor(model => model.Address)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.LabelFor(model => model.Amount)
-                        @Html.EditorFor(model => model.Amount)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.LabelFor(model => model.Contact_No)
-                        @Html.EditorFor(model => model.Contact_No)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <button type="submit">Donate Now</button>
-                    </th>
-                </tr>
-            </table>
+        <table width="20%">
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Organization)
+                    @Html.DropDownList("Organization", new List<SelectListItem>
+                   {
+                    new SelectListItem { Text = "Education"},
+                    new SelectListItem { Text = "Animals"},
+                    new SelectListItem { Text = "Memorial"},
+                    new SelectListItem { Text = "FoodBank"},
+                    new SelectListItem { Text = "CancerPatient"},
+                    new SelectListItem { Text = "Medical"}
+                    }, "Select Organization")
+                    @*@Html.EditorFor(model => model.Organization)*@
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.Name)
+                    @Html.EditorFor(model => model.Name)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.LabelFor(model => model.Email)
+                    @Html.EditorFor(model => model.Email)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.LabelFor(model => model.Address)
+                    @Html.EditorFor(model => model.Address)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.LabelFor(model => model.Amount)
+                    @Html.EditorFor(model => model.Amount)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.LabelFor(model => model.Contact_No)
+                    @Html.EditorFor(model => model.Contact_No)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.LabelFor(model => model.Our_Org)
+                    @Html.EditorFor(model => model.Our_Org)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button type="submit">Donate Now</button>
+                </th>
+            </tr>
+        </table>
 
         }
     </fieldset>
