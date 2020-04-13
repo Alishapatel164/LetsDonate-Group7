@@ -18,7 +18,7 @@ namespace Group7_Week3.Controllers
                 Name = "Prit",
                 Email = "prit.patel1104@gmail.com",
                 Contact = "+437-343-4178",
-                info="My name is Prit Patel,currently i am doing software quality testing , i love to do testing."
+                info="My name is Prit Patel,currently I'm doing software quality testing , i love to do testing."
             },
                 new Team
             {
