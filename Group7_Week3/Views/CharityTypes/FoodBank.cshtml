@@ -1,5 +1,100 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "";
 }
+<html>
+<head>
+    <style>
+
+        .texts {
+            color: darkgreen;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        input {
+        }
+
+        img {
+            border-radius: 3px;
+            width: 500px;
+            height: 600px;
+        }
+
+        .text1 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .btn1 {
+            background-color: #e7e7e7;
+            color: white;
+            padding: 10px;
+            padding-left: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: limegreen;
+            font-weight: bold;
+        }
+
+        .btn2 {
+            background-color: ghostwhite;
+            color: black;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: ghostwhite;
+            font-weight: bold;
+        }
+
+            .btn2:hover {
+                background-color: gainsboro;
+            }
+
+        .btn1:hover {
+            background-color: mediumseagreen;
+        }
+
+        .text3 {
+            padding-top: 20%;
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="text-center">
+
+        <table style="width:100%">
+
+            <tr>
+                <th class="text3">
+                    <input type="button" class="btn2" value="Go Back" onclick="@("window.location.href='"+Url.Action("Donation","Home")+"'");">
+                    <h3 class="text1">Get help with Food fundraising</h3>
+                    It’s easy to make a donation of food to Daily Bread.
+                    <br />
+                    <input type="button" class="btn1" value="Start Donating" onclick="@("window.location.href='"+Url.Action("Donation","Home")+"'");">
+
+
+                </th>
+
+                <th>
+                    <img src="~/images/Food.jpg" />
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

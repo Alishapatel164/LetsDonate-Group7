@@ -66,9 +66,13 @@
             </tr>
             <tr>
                 <th>
-                    <label>Donate 2 % for Us</label>
-                    @Html.EditorFor(model => model.Our_Org)
+                    <label>Donate 2 % for our Organization</label>
+                    <br>
+                    @Html.RadioButtonFor(model => model.Our_Org, "Yes")Yes
+                    <br>
+                    @Html.RadioButtonFor(model => model.Our_Org, "No")No
                 </th>
+               
             </tr>
             <tr>
                 <th>
